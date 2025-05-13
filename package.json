@@ -1,0 +1,44 @@
+{
+  "name": "chat-app",
+  "version": "1.0.1",
+  "description": "A real-time chat application using Socket.IO",
+  "author": "Your Name <you@example.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/chat-app.git"
+  },
+  "keywords": [
+    "chat",
+    "socket.io",
+    "real-time",
+    "nodejs"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "main": "script.js",
+  "scripts": {
+    "start": "NODE_ENV=production node server.js",
+    "dev": "nodemon --watch src --exec \"node server.js\"",
+    "lint": "eslint \"src/**/*.js\"",
+    "format": "prettier --write \"src/**/*.js\"",
+    "precommit": "npm run lint && npm run format",
+    "test": "jest",
+    "upgrade-deps": "ncu -u && npm install"
+  },
+  "dependencies": {
+    "glob": "^11.0.2",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "eslint": "^9.26.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.4.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.10",
+    "npm-check-updates": "^18.0.1",
+    "prettier": "^3.5.3",
+    "rimraf": "^6.0.1"
+  }
+}
